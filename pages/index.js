@@ -1,7 +1,7 @@
-import { useState, useEffect } from 'react';
-import styles from '../styles/Home.module.css';
+const { useState, useEffect } = require('react');
+const styles = require('../styles/Home.module.css');
 
-export default function Home() {
+function Home() {
   const [verifications, setVerifications] = useState([]);
   const [form, setForm] = useState({
     mac_address: '',
@@ -95,3 +95,5 @@ export default function Home() {
     </div>
   );
 }
+
+module.exports = Home;
